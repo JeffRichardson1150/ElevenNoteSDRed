@@ -15,14 +15,14 @@ namespace ElevenNote.WebMVC.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "ElevenNote MVC";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "ElevenNote MVC contact page.";
 
             return View();
         }
