@@ -1,0 +1,18 @@
+﻿@model System.DateTimeOffset?
+
+<span>
+
+    <!-- "G" converts date to General (long form) (6/15/2009 1:45:30 PM)
+        other options (vs "G") can be found at
+        https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings
+        -->
+    @(Model.HasValue ? Model.Value.LocalDateTime.ToString("G") : "-")
+        
+<!--   Some of the other conversion options
+    @(Model.HasValue ? Model.Value.LocalDateTime.ToString("g") : "-")
+    @(Model.HasValue ? Model.Value.LocalDateTime.ToString("t") : "-")
+    @(Model.HasValue ? Model.Value.LocalDateTime.ToString("D") : "-")
+    @(Model.HasValue ? Model.Value.LocalDateTime.ToString("f") : "-")
+-->
+
+</span>
